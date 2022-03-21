@@ -1,0 +1,11 @@
+
+[jira1]
+jira1-dev1
+jira1-dev2
+
+[jira2]
+jira2-dev1
+
+[jira:children]
+jira1
+jira2

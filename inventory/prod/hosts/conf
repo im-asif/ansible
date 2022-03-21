@@ -1,0 +1,13 @@
+[conf1]
+app01
+
+[conf2]
+conf2-dev1
+
+[conf_rr:children]
+conf1
+conf2
+
+[conf_all:children]
+conf1
+conf2
