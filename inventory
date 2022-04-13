@@ -1,0 +1,2 @@
+app01 ansible_host=192.168.135.101
+app03 ansible_host=192.168.135.103
