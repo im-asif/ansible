@@ -2,6 +2,8 @@
   become: yes
 
   tasks:
+    - debug:
+        msg: "System {{ inventory_hostname }} has uuid {{ ansible_product_uuid }}"
   
     - name: Generate an OpenSSH keypair with the default valuesa nd encrypted private key
       community.crypto.openssh_keypair:
