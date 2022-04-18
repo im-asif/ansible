@@ -1,11 +1,7 @@
 - hosts: all
   become: yes
-
   tasks:
-    #- name: ping
-     # ping:
-     
-    - name: Generate an OpenSSH keypair with the default values (4096 bits, rsa) and encrypted private key
+    - name: Generate an OpenSSH keypair with the default values
       community.crypto.openssh_keypair:
         path: /tmp/id_ssh_rsa
         passphrase: super_secret_password
