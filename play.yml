@@ -9,4 +9,4 @@
       community.crypto.openssh_keypair:
         path: /tmp/id_ssh_rsa
         passphrase: super_secret_password
-       delegate_to: localhost
+      delegate_to: localhost
