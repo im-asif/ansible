@@ -1,7 +1,7 @@
 - name: generate SSH key
   hosts: all
   vars:
-    ansible_user: awx
+    ansible_user: ansible
     ssh_key_filename: id_rsa_myproject
     ssh_passphrase: changeme
 
@@ -9,6 +9,7 @@
 
     - name: generate SSH key "{{ssh_key_filename}}"
       user:
+        group: admin
         name: "{{ansible_user}}"
         generate_ssh_key: yes
         ssh_key_type: rsa
