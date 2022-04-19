@@ -6,7 +6,11 @@
     ssh_passphrase: changeme
 
   tasks:
-
+    - name: Create group
+      group:
+        name: admin
+        state: present
+        
     - name: generate SSH key "{{ssh_key_filename}}"
       user:
         group: admin
