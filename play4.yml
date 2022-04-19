@@ -1,13 +1,9 @@
 - name: generate SSH key
-  hosts: 127.0.0.1
-  connection: local
+  hosts: all
 
   vars:
     ssh_key_filename: id_rsa_myproject
-
-  vars_prompt:
-    - name: "ssh_passphrase"
-      prompt: "Enter the passphrase for the SSH key"
+    ssh_passphrase: changeme
 
   tasks:
 
