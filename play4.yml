@@ -2,6 +2,7 @@
   hosts: all
 
   vars:
+    ansible_user: awx
     ssh_key_filename: id_rsa_myproject
     ssh_passphrase: changeme
 
@@ -14,5 +15,4 @@
         ssh_key_type: rsa
         ssh_key_bits: 4096
         ssh_key_file: /tmp/{{ssh_key_filename}}
-        ssh_key_passphrase: "{{ssh_passphrase}}"
         force: no
