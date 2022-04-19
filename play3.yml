@@ -1,5 +1,4 @@
-- hosts: all
-  b- name: generate SSH key
+- name: generate SSH key
   hosts: 127.0.0.1
   connection: local
   vars:
