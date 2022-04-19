@@ -1,6 +1,6 @@
 - name: generate SSH key
   hosts: all
-
+  become: yes
   vars:
     ansible_user: awx
     ssh_key_filename: id_rsa_myproject
