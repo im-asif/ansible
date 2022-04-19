@@ -1,0 +1,9 @@
+- hosts: all
+  become: yes
+
+  tasks:
+    - openssh_keypair:
+        group: root
+        owner: root
+        path: /tmp/jh1_id_rsa
+        register: ssh_key
